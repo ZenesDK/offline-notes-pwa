@@ -33,7 +33,8 @@
 ## Структура проекта
 
 ```
-notes-app/
+
+offline-notes-pwa/
 ├── server/                          # Серверная часть (Node.js)
 │   ├── server.js                    # Express + Socket.IO + web-push
 │   └── package.json                 # Зависимости сервера
@@ -197,7 +198,7 @@ app.post('/api/snooze', (req, res) => {
 ### 1. Клонирование репозитория
 
 ```bash
-git clone <ссылка-на-репозиторий>
+git clone https://github.com/ZenesDK/offline-notes-pwa
 cd notes-app
 ```
 
