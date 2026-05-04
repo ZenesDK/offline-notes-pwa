@@ -1,0 +1,114 @@
+# Зависимости
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Сборка и кэш
+dist/
+dist-ssr/
+*.local
+.vite/
+.cache/
+build/
+.parcel-cache/
+
+# SSL сертификаты (важно! не публиковать)
+*.pem
+*.key
+*.crt
+*.cer
+*.der
+*.p12
+
+# Файлы окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Редакторы и IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Логи
+logs/
+*.log
+*.log.*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+
+# Пользовательские файлы
+*.backup
+*.old
+*.orig
+
+# Деплой
+.env.production
+.vercel/
+.netlify/
+
+# Отчёты и тесты
+coverage/
+.nyc_output/
+*.test.html
+
+# Утилиты
+*.patch
+.dockerignore
+Dockerfile
+docker-compose*.yml
+
+# Результаты аудита
+lighthouse-results/
+*.lighthouse.json
+
+# Временные файлы mkcert
+rootCA.pem
+rootCA-key.pem
+
+# Скомпилированные файлы
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Бэкапы
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# Скрытые файлы
+.*.swp
+.*.swo
+.*.swn
+
+# Debug
+.vscode/launch.json
+.breakpoints
+.debug
+
+# TypeScript (если будет использоваться)
+*.tsbuildinfo

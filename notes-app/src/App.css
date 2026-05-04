@@ -1,0 +1,128 @@
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.button {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Исправление для длинных заметок */
+.card {
+  word-wrap: break-word;      /* Перенос длинных слов */
+  overflow-wrap: break-word;  /* Современный аналог */
+  word-break: break-word;     /* Принудительный перенос */
+  max-width: 100%;            /* Не выходить за границы */
+}
+
+/* Для текста внутри карточки */
+.card p {
+  margin: 0 0 0.5rem 0;
+  white-space: pre-wrap;      /* Сохранять пробелы, но переносить */
+  line-height: 1.5;           /* Улучшить читаемость */
+  max-height: 200px;          /* Ограничить высоту (опционально) */
+  overflow-y: auto;           /* Добавить скролл если слишком длинная */
+}
+
+/* Для текстового поля ввода (форма) */
+textarea {
+  resize: vertical;           /* Разрешить изменение высоты */
+  min-height: 60px;           /* Минимальная высота */
+  font-family: inherit;       /* Наследовать шрифт */
+}
+
+/* Дополнительно: стили для длинных слов без пробелов */
+.card p {
+  hyphens: auto;              /* Автоматические переносы */
+}
+
+/* Стили для текстового поля редактирования */
+.edit-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 150px;
+  max-height: 400px;
+  resize: vertical;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.edit-textarea:focus {
+  outline: none;
+  border-color: #2196F3;
+  background-color: #fff;
+}
+
+/* ПЕРЕОПРЕДЕЛЯЕМ стили Chota для textarea */
+textarea,
+textarea:focus,
+textarea:active,
+textarea:hover {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  padding: 12px !important;
+  min-height: 120px !important;
+  max-height: 400px !important;
+  font-family: inherit !important;
+}
+
+/* Специально для режима редактирования */
+.card textarea {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+/* Для всех полей ввода */
+input, textarea, select {
+  font-size: 16px !important;
+}
+
+/* Выравнивание высоты поля ввода и кнопки */
+.row {
+  align-items: stretch;
+}
+
+.row input,
+.row button {
+  height: 100%;
+  min-height: 48px;  /* Фиксированная минимальная высота */
+  box-sizing: border-box;
+}
+
+/* Для поля ввода */
+.row input {
+  line-height: normal;
+  padding: 12px 12px;
+}
+
+/* Для кнопки */
+.row button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 16px;
+}
