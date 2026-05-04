@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNotes } from "../contexts/NoteContext";
+import { webSocketService } from "../services/WebSocketService";
 
 export const NoteForm = () => {
   const { addNote } = useNotes();
@@ -13,6 +14,7 @@ export const NoteForm = () => {
     setIsSubmitting(true);
     try {
       await addNote(text);
+      webSocketService.emit('newTask', { text, id: Date.now() });
       setText("");
     } catch (error) {
       console.error("Ошибка добавления заметки:", error);
