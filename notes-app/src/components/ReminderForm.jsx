@@ -101,7 +101,7 @@ export const ReminderForm = () => {
             width: "100%"
           }}
         >
-          {isSubmitting ? "Добавление..." : "⏰ Добавить с напоминанием"}
+          {isSubmitting ? "Добавление..." : "Напоминание"}
         </button>
       </div>
     </form>

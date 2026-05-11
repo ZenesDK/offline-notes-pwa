@@ -7,8 +7,8 @@ const path = require('path');
 
 // ========== VAPID КЛЮЧИ ==========
 // ЗАМЕНИТЕ НА СВОИ КЛЮЧИ, СГЕНЕРИРОВАННЫЕ ВЫШЕ!
-const VAPID_PUBLIC_KEY = 'BACZCozG_P85IrVzypxNv2np9viNsv3b1rWFbZ5i6qAhFQvINjgf88kvRwlqu7uo5QdXcQpZqMtm2anMddGuQio';
-const VAPID_PRIVATE_KEY = 'moAJVSLj98c0hQ5WMCZ_KPFJiA7t9_JMn-hmmlIGYN8';
+const VAPID_PUBLIC_KEY = 'ВАШ_ПУБЛИЧНЫЙ_КЛЮЧ';
+const VAPID_PRIVATE_KEY = 'ВАШ_ПРИВАТНЫЙ_КЛЮЧ';
 
 webpush.setVapidDetails(
   'mailto:your-email@example.com', // Замените на свой email
